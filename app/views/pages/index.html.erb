@@ -1,0 +1,33 @@
+<br>
+<h1>Proyectos</h1>
+<hr>
+
+<h2>Ingrese su proyecto</h2>
+<form method="get" action="pages/create" class="py-3">
+    Nombre:<input name="nombre" class="form-control">
+    <br>
+    Descripción:<textarea name="descripcion" class="form-control"></textarea>
+    <br>
+    Fecha inicio:<input name="fecha_inicio" class="form-control">
+    <br>
+    Fecha termino:<input name="fecha_termino" class="form-control">
+    <br>
+    Estado:<select name="estado"> 
+        <option value="propuesta"> Propuesta </option> 
+        <option value="en progreso"> En progeso </option> 
+        <option value="terminado"> Terminado </option> 
+    </select>
+    <br>
+    <br>
+    <input class="btn btn-dark" type="submit" value="Enviar">
+   
+</form>
+
+<br>
+<a href="http://[::1]:3000/pages/dashboard">
+<div class="d-grid gap-2">
+<button type="button" class="btn btn-info">Ver todos los proyectos </button>
+</div>
+</a>
+<br>
+<br>

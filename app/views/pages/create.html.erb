@@ -1,0 +1,16 @@
+<% if @proyect.errors.any? %>
+    <div id="error_explanation">
+        <h2>
+            <%= pluralize(@proyect.errors.count, "error") %>
+            Falta información.
+        </h2>
+        <ul>
+            <% @proyect.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+        </ul>
+    </div>
+<% else%>
+    <h1> Tu proyecto ha sido ingresado. </h1>
+<% end %>
+

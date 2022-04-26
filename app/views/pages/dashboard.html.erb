@@ -1,0 +1,26 @@
+<nav class="navbar navbar-light bg-info justify-content-between py-3 px-5">
+  <a class="navbar-brand">Proyectos agregados</a>
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="state">
+    <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
+
+<table class="table">
+  <tr>
+    <th>Nombre</th>
+    <th>Descripción</th>
+    <th>Fecha inicio</th>
+    <th>Fecha termino</th>
+    <th>Estado</th>
+  </tr>    
+  <% @proyects.each do |proyect| %>
+    <tr>
+      <td><%= proyect.name %></td>
+        <td><%= proyect.description %></td>
+        <td><%= proyect.startdate %></td>
+        <td><%= proyect.enddate %></td>
+        <td><%= proyect.state %></td>
+    </tr>
+  <% end %>
+</table>
